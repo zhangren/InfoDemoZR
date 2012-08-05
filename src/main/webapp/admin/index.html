@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>七台河信息发布管理系统</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Le styles -->
+		<link href="../assets/css/bootstrap.css" rel="stylesheet">
+		<style type="text/css">
+			body {
+			padding-top: 60px;
+			padding-bottom: 40px;
+			}
+			.sidebar-nav {
+			padding: 9px 0;
+			}
+		</style>
+		<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+			<!-- Le fav and touch icons -->
+			<link rel="shortcut icon" href="../assets/ico/favicon.ico">
+			<link rel="apple-touch-icon-precomposed" sizes="144x144"
+			href="../assets/ico/apple-touch-icon-144-precomposed.png">
+			<link rel="apple-touch-icon-precomposed" sizes="114x114"
+			href="../assets/ico/apple-touch-icon-114-precomposed.png">
+			<link rel="apple-touch-icon-precomposed" sizes="72x72"
+			href="../assets/ico/apple-touch-icon-72-precomposed.png">
+			<link rel="apple-touch-icon-precomposed"
+			href="../assets/ico/apple-touch-icon-57-precomposed.png">
+	</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="btn btn-navbar" data-toggle="collapse"
+				data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span
+					class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="index.html">七台河信息发布管理系统</a>
+				<div class="btn-group pull-right">
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						<i class="icon-user"></i>
+						管理员XX
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">修改密码</a></li>
+						<li class="divider"></li>
+						<li><a href="#">注销</a></li>
+					</ul>
+				</div>
+				<div class="nav pull-right	">
+					<ul class="nav">
+						<li><a href="#">站内信</a></li>
+					</ul>
+				</div>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li class="active"><a href="index.html">用户管理</a></li>
+						<li><a href="saleProductManage.html">销售产品管理</a></li>
+						<li><a href="procureProductManage.html">采购产品管理</a></li>
+						<li><a href="productTypeManage.html">产品类别管理</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="span12">
+				<ul class="nav nav-pills">
+					<li class="active"><a href="#">用户列表</a></li>
+					<li><a href="#">新增园区内部用户</a></li>
+				</ul>
+				<!--/.well -->
+			</div>
+		</div>
+		<!--/row-->
+		<div class="row">
+			<form class="well form-search span12">
+				<div>
+					<label class="label label-warning"  for="input01">用户名</label>
+					<input
+					type="text" class="input-middle" id="input01">
+					<label class="label label-warning"  for="input01">公司名称</label>
+					<input
+					type="text" class="input-xlarge" id="input01">
+					<label class="label label-warning">级别</label>
+					<select class="span2">
+						<option></option>
+						<option>普通会员</option>
+						<option>金牌会员</option>
+					</select>
+					<label class="label label-warning">状态</label>
+					<select>
+						<option></option>
+						<option>待审核</option>
+						<option>已审核</option>
+						<option>已冻结</option>
+					</select>
+				</div>
+				<div class="pull-right">
+				<button type="submit" class="btn btn-warning ">
+				Search
+				</button>
+				</div>
+			</form>
+		</div>
+		<div class="row">
+			<div class="span12">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>用户名</th>
+							<th>公司名称</th>
+							<th>等级</th>
+							<th>状态</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>xx1</td>
+							<td>公司名称1</td>
+							<td>普通会员</td>
+							<td>待审核</td>
+							<td>
+								<a href="#">审核</a>
+								<a href="#">编辑</a>
+								<a href="#">忘记密码</a>
+								<a href="#">等级评定</a>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>xx2</td>
+							<td>公司名称2</td>
+							<td>金牌会员</td>
+							<td>已审核</td>
+							<td>
+								<a href="#">冻结</a>
+								<a href="#">编辑</a>
+								<a href="#">忘记密码</a>
+								<a href="#">等级评定</a>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>xx3</td>
+							<td>公司名称3</td>
+							<td>普通会员</td>
+							<td>已冻结</td>
+							<td>
+								<a href="#">解冻</a>
+								<a href="#">编辑</a>
+								<a href="#">忘记密码</a>
+								<a href="#">等级评定</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<hr>
+		<footer>
+			<p>
+			&copy; xhm
+			</p>
+		</footer>
+	</div>
+	<!--/.fluid-container-->
+	<!-- Le javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="../assets/js/jquery.js"></script>
+	<script src="../assets/js/bootstrap-transition.js"></script>
+	<script src="../assets/js/bootstrap-alert.js"></script>
+	<script src="../assets/js/bootstrap-modal.js"></script>
+	<script src="../assets/js/bootstrap-dropdown.js"></script>
+	<script src="../assets/js/bootstrap-scrollspy.js"></script>
+	<script src="../assets/js/bootstrap-tab.js"></script>
+	<script src="../assets/js/bootstrap-tooltip.js"></script>
+	<script src="../assets/js/bootstrap-popover.js"></script>
+	<script src="../assets/js/bootstrap-button.js"></script>
+	<script src="../assets/js/bootstrap-collapse.js"></script>
+	<script src="../assets/js/bootstrap-carousel.js"></script>
+	<script src="../assets/js/bootstrap-typeahead.js"></script>
+</body>
+</html>
